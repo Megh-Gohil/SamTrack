@@ -3,11 +3,11 @@ import numpy as np
 import cv2
 import PIL
 
-from src.groundingdino.groundingdino.models import build_model as build_grounding_dino
-from src.groundingdino.groundingdino.util.slconfig import SLConfig
-from src.groundingdino.groundingdino.util.utils import clean_state_dict
-from src.groundingdino.groundingdino.util.inference import annotate, load_image, predict
-import src.groundingdino.groundingdino.datasets.transforms as T
+from groundingdino.models import build_model as build_grounding_dino
+from groundingdino.util.slconfig import SLConfig
+from groundingdino.util.utils import clean_state_dict
+from groundingdino.util.inference import annotate, load_image, predict
+import groundingdino.datasets.transforms as T
 
 from torchvision.ops import box_convert
 
