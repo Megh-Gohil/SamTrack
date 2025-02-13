@@ -21,6 +21,7 @@ git clone https://github.com/ClementPinard/Pytorch-Correlation-extension.git
 cd Pytorch-Correlation-extension
 python setup.py install
 cd -
+cp -r Pytorch-Correlation-extension/Correlation_Module/spatial_correlation_sampler .
 
 # Install AST
 git clone https://github.com/YuanGongND/ast.git ast_master
