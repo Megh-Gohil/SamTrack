@@ -27,3 +27,6 @@ cp -r Pytorch-Correlation-extension/Correlation_Module/spatial_correlation_sampl
 git clone https://github.com/YuanGongND/ast.git ast_master
 cp ./prepare.py ./ast_master
 
+mkdir debug
+mkdir debug/seg_result
+mkdir debug/aot_resullt
