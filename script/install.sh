@@ -8,6 +8,7 @@ git clone https://github.com/IDEA-Research/GroundingDINO.git
 cd GroundingDINO/
 pip install -e .
 cd -
+cp -r GroundingDINO/groundingdino .
 
 # Install other lib
 pip install numpy opencv-python pycocotools matplotlib Pillow scikit-image
