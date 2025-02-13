@@ -3,17 +3,17 @@ import numpy as np
 import cv2
 import PIL
 
-from src.groundingdino.models import build_model as build_grounding_dino
-from src.groundingdino.util.slconfig import SLConfig
-from src.groundingdino.util.utils import clean_state_dict
-from src.groundingdino.util.inference import annotate, load_image, predict
-import src.groundingdino.datasets.transforms as T
+from src.groundingdino.groundingdino.models import build_model as build_grounding_dino
+from src.groundingdino.groundingdino.util.slconfig import SLConfig
+from src.groundingdino.groundingdino.util.utils import clean_state_dict
+from src.groundingdino.groundingdino.util.inference import annotate, load_image, predict
+import src.groundingdino.groundingdino.datasets.transforms as T
 
 from torchvision.ops import box_convert
 
 class Detector:
     def __init__(self, device):
-        config_file = "src/groundingdino/groundingdino/config/GroundingDINO_SwinT_OGC.py"
+        config_file = "src/groundingdino/groundingdino/groundingdino/config/GroundingDINO_SwinT_OGC.py"
         grounding_dino_ckpt = './ckpt/groundingdino_swint_ogc.pth'
         args = SLConfig.fromfile(config_file) 
         args.device = device
