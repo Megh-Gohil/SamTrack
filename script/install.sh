@@ -5,7 +5,7 @@ cd -
 # Install Grounding-Dino
 # pip install -e git+https://github.com/IDEA-Research/GroundingDINO.git@main#egg=GroundingDINO
 git clone https://github.com/IDEA-Research/GroundingDINO.git
-cd groundingdino
+cd GroundingDINO/
 pip install -e .
 cd -
 
